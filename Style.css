@@ -69,7 +69,20 @@ main {
     background: linear-gradient(180deg, #584df5 5%, #bfabfc 20%, #ffffff 50%);
 }
 .hero-section{
+    display:flex;
     height:100vh;
+}
+.hero-left{
+    margin-top:300px;
+    width:50%;
+}
+.hero-right{
+    width:50%;
+}
+.hero-right video{
+    margin-top:200px;
+    border-radius:18px;
+    width:90%;
 }
 
 .bento-grid{
@@ -291,6 +304,94 @@ main {
     border:1px solid  #35415a33;
     padding:12px 18px;
     border-radius:8px;
-    font-weight:520;
+    font-weight:530;
     font-size:16px;
+    color: black;
+}
+
+/* OverFlow-template Section*/
+
+.overflow-template{
+    margin : 100px 60px;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:24px;
+    overflow:auto;
+}
+.overflow-template::-webkit-scrollbar{
+    display:none;
+}
+.overflow-top{
+    display:flex;
+    gap:24px;
+}
+.overflow-top a img{
+    border-radius:8px;
+    width:230px;
+    height:310px;
+    border: 1px solid #35415a33;
+}
+.overflow-bottom{
+    display:flex;
+    gap:24px;
+}
+.overflow-bottom a img{
+    border-radius:8px;
+    width:230px;
+    height:310px;
+    border: 1px solid #35415a33;
+}
+/*   Plan Section  */
+.plan-section{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:30px;
+    margin:260px;
+}
+.plan-section p{
+    text-align:center;
+    color: #444;
+}
+.plan-section >a{
+    text-align:center;
+    padding:14px 25px;
+    padding-left:40px;
+    margin:0px 100px ;
+    font-weight:600;
+    color: #444;   
+    border: 1px solid #35415a33;
+    border-radius:10px;
+    position:relative;
+}
+.plan-section i{
+    position:absolute;
+    top:14px;
+    left:8px;
+}
+
+/*   Footer Section  */
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    margin:200px 40px;
+}
+
+.part1a{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+}
+.part1a a{
+    padding:12px 16px ;
+    border:1px solid  #35415a33;
+    border-radius:10px;
+    color:#0f1015;
+    font-weight:550;
+}
+.footer h2{
+    margin-bottom:20px;
+    font-weight:200;
 }
